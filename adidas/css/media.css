@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:320px){
+	.select span{
+		font-size: 20px; top: 4px;
+	}
+	#back_in{
+		width: 20px; height: 19px;
+	}
+	#save{
+		bottom: -16px; font-size: 15px;
+	}
+}

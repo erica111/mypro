@@ -1,0 +1,772 @@
+html,body{
+    width: 100%;height: 100%;
+    background: url("../images/bg.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+/*text*/
+#loading{
+    display: block;
+}
+.scene_one{
+    display: none;
+}
+.scene_two{
+    display: none;
+}
+.scene_three{
+    display: none;
+}
+.choice{
+    display: none;
+}
+.choice_a{
+    display: none;
+}
+.choice_b{
+    display: none;
+}
+.choice_c{
+    display: none;
+}
+.topay{
+    display: none;
+}
+.put_pass{
+    display: none;
+}
+.weiye{
+    display: none;
+}
+
+
+/*loading*/
+#loading{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg");
+    position: relative;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+#loading div{
+    width: 30.9021113%;
+    position: absolute;
+    top:17.113276%;
+    left:34.54894435%;
+    text-align: center;
+}
+#loading div img{
+    width: 100%;
+}
+#loading p,#loading span{
+    font-size: 60px;
+    margin-top: 2.31425%;
+    font-weight: bold;
+}
+.load_font{
+    position: absolute;
+    width: 63.243761%;
+    left: 18.80998%;
+    bottom:16.504263%
+}
+
+
+/*场景一*/
+.scene_one{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg2.jpg");
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+.view{
+    position: relative;
+    top: 54.41413%;
+}
+.desk{
+    width: 100%;
+}
+.scene_one .shan > img:nth-child(1){
+    width: 13%;
+    top:69.5%;
+    left: 45.5%;
+    -webkit-animation:showpoint1 1.5s 3s infinite;
+    -o-animation:showpoint1 1.5s 3s infinite;
+    animation:showpoint1 1.5s 3s infinite;
+
+}
+.scene_one .shan > img:nth-child(2){
+    width: 10%;
+    top:72%;
+    left: 47%;
+    -webkit-animation:showpoint2 1.5s 3s infinite;
+    -o-animation:showpoint3 1.5s 3s infinite;
+    animation:showpoint2 1.5s 3s infinite;
+}
+.scene_one .shan > img:nth-child(3){
+    width: 6%;
+    top:74%;
+    left: 49%;
+    -webkit-animation:showpoint3 1.5s 3s infinite;
+    -o-animation:showpoint3 1.5s 3s infinite;
+    animation:showpoint3 1.5s 3s infinite;
+}
+.scene_one .shan > img:nth-child(4){
+    width: 15%;
+    top:80%;
+    left: 52%;
+    -webkit-animation: fadeInUp 1.5s 3s infinite;
+    -o-animation: fadeInUp 1.5s 3s infinite;
+    animation: fadeInUp 1.5s 3s infinite;
+}
+.scene_one .bailing{
+    position: absolute;
+    width: 48.752399%;
+    top:-76.851401%;
+    right:24.4069097%;
+}
+.scene_one .duihua1{
+    position: absolute;
+    width:67.89635%;
+    top: -104.320342%;
+    left: 15.213051%;
+}
+.scene_one .duihua2{
+    position: absolute;
+    width:24.8867562%;
+    top: -54.552984%;
+    right: 0;
+}
+.scene_one a{
+    position: absolute;
+    bottom: 10.2021924%;
+    left:26.583493%;
+    width: 47.4088291%;
+}
+.scene_one a img{
+    width: 100%;
+}
+.scene_one a:hover{
+    background: url("../images/button_01down.png");
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+.scene_one .duihua4{
+    position: absolute;
+    width:61.4203454%;
+    top: 7.856272%;
+    right: 18.7140115%;
+}
+
+/*场景二*/
+.scene_two{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg8.jpg");
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+.scene_two .duihua1{
+    position: absolute;
+    width: 61.420345%;
+    top: 7.8562728%;
+    left: 18.714011%;
+}
+.scene_two .tips1{
+    position: relative;
+    width: 5.758157%;
+    left:44.721689%;
+    top: 69.9756394%;
+}
+.scene_two .arrow{
+    width: 100%;
+}
+.scene_two .hand{
+    position: absolute;
+    width: 278.3333333%;
+    top:0;
+    left: 36.666666%;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s infinite;
+    -o-animation: fadeInUp 1s infinite;
+    animation: fadeInUp 1s infinite;
+}
+.scene_two .text{
+    position: absolute;
+    width: 65.738963%;
+    bottom: 4.1412911%;
+    left: 17.46641%;
+}
+
+/*场景三*/
+.scene_three{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg9.jpg");
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    overflow: hidden;
+}
+
+.scene_three .bailing{
+    display: block;
+    position: absolute;
+    width: 45.585412%;
+    top: -105.383679%;
+    left:25.719769%;
+}
+.scene_three .bag{
+    z-index: 2000000;
+    position: absolute;
+    width:51.662188%;
+    top: 4.856272%;
+    right: 26.032629%;
+}
+.scene_three .wupin{
+    position: absolute;
+    display: none;
+    z-index: 201;
+}
+.scene_three .tips2{
+    z-index: 9999999999;
+    position: absolute;
+    width: 5.758157%;
+    top: 32%;
+    left: 46%;
+}
+.scene_three .arrow{
+    width: 100%;
+}
+.scene_three .hand{
+    position: absolute;
+    width: 278.3333333%;
+    top:0;
+    left: 36.666666%;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s infinite;
+    -o-animation: fadeInUp 1s infinite;
+    animation: fadeInUp 1s infinite;
+}
+.scene_three .text{
+    position: absolute;
+    width: 65.738963%;
+    bottom: 8.141291%;
+    left: 17.46641%;
+}
+.scene_three .left,.scene_three .right{
+    width: 19.447216%;
+}
+.scene_three .mid{
+    width:41.266794%;
+    top: 31.0596833%;
+    left: 25.193857%;
+}
+.scene_three .right{
+    top: 45.5822168%;
+    left:40.1900191%;
+}
+.scene_three .left{
+    top: 45.5822168%;
+    left: 20.2744721%;
+}
+.scene_three .chuanqi{
+    position: absolute;
+    display: none;
+    width: 34.548944%;
+    bottom: 87.264311%;
+    left:32.523751%;
+}
+.scene_three .chuanqiBtn{
+    display: none;
+}
+.scene_three .duihua{
+    position: absolute;
+    width: 64.77927%;
+    left: 16.946257%;
+    top: -99.082826%;
+}
+.scene_three .btn1 img,.scene_three .btn2 img{
+    width: 100%;
+}
+.scene_three .btn1{
+    position: absolute;
+    width: 34.069097%;
+    left: 11.228406%;
+    bottom: 8.2630937%;
+}
+.scene_three .btn2{
+    position: absolute;
+    width:30.42226487%;
+    right: 13.5316698%;
+    bottom: 8.2630937%;
+}
+.scene_three .choice{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.choice p,.choice .btn{
+    position: absolute;
+    z-index: 301;
+}
+.scene_three .btn img,.scene_three p img{
+    width: 100%;
+}
+.scene_three .choice p{
+    width: 88.3877159%;
+    top: 13.398294%;
+    left:6.14203454% ;
+}
+.scene_three .choice .btn3{
+    left: 8.637236%;
+    width: 83.205374%;
+    top: 27.222898%;
+    
+}
+.scene_three .choice .btn4{
+    left: 8.637236%;
+    width: 83.205374%;
+    top: 47.807551%;
+}
+.scene_three .choice .btn5{
+    left: 8.637236%;
+    width: 83.205374%;
+    top: 68.270401%;
+}
+
+/*场景1*/
+.choice_a{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: url("../images/bg3.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.choice_a a,.choice_b a{
+    position: absolute;
+    width: 47.408829%;
+    bottom:5.420219%;
+    left:26.583493%;
+}
+.choice_a a img,.choice_b a img{
+    width: 100%;
+}
+
+/*场景b*/
+.choice_b{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: url("../images/bg4.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.choice_b .wenzi{
+    position: absolute;
+    width: 75.629558%;
+    top: 3.471376%;
+    left: 15.445297%;
+    z-index: 101;
+}
+.choice_b .bailing{
+    position: absolute;
+    width: 64.55278%;
+    right: 4.894433%;
+    bottom: 17.11327%;
+}
+
+/*场景c*/
+.choice_c{
+    width: 100%;
+    height: 100%;
+    background: url("../images/step1_bg.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.choice_c .hand{
+    position: relative;
+    top: 10%;
+}
+.choice_c img{
+    width: 80%;
+    padding-left: 20%;
+}
+.choice_c .shan{
+    position: absolute;
+    z-index: 100;
+    right:25.45%;
+    top: 64.96894%;
+    width: 11.7082533%;
+    height: 7.429963%;
+}
+.choice_c .light {
+    width: 50.880038%;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 14.6236%;
+    right: 11.930902%;
+}
+
+.shan > img:nth-child(1){
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+    opacity: 0;
+    -webkit-animation: showpoint1 1.5s infinite;
+    -o-animation: showpoint1 1.5s infinite;
+    animation: showpoint1 1.5s infinite;
+}
+.shan > img:nth-child(2){
+    position: absolute;
+    width: 73.770491%;
+    z-index: 102;
+    top: 13.1147545%;
+    left:13.1147545%;
+    opacity: 0;
+    -webkit-animation: showpoint2 1.5s infinite;
+    -o-animation: showpoint2 1.5s infinite;
+    animation: showpoint2 1.5s infinite;
+}
+.shan > img:nth-child(3){
+    position: absolute;
+    width: 43.4426229%;
+    z-index: 103;
+    top: 28.27868855%;
+    left: 28.27868855%;
+    opacity: 0;
+    -webkit-animation: showpoint3 1.5s infinite;
+    -o-animation: showpoint3 1.5s  infinite;
+    animation: showpoint3 1.5s  infinite;
+}
+.shan > img:nth-child(4){
+    position: absolute;
+    width: 164.333333%;
+    top:43%;
+    left: 40.666666%;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1.5s infinite;
+    -o-animation: fadeInUp 1.5s infinite;
+    animation: fadeInUp 1.5s infinite;
+}
+
+
+/*广发云支付*/
+.topay{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg5.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.topay .arrow{
+    width: 9.213051%;
+    position: absolute;
+    top: 31.861144%;
+    left: 44.241842%;
+    -webkit-animation: fadeInUp 1s infinite;
+    -o-animation: fadeInUp 1s infinite;
+    animation: fadeInUp 1s infinite;
+}
+.topay .mobile{
+    width: 77.92322%;
+    position: absolute;
+    top: 40.803897%;
+    left:29.537428%;
+}
+
+/*第三部*/
+.put_pass{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url("../images/step3_bg1.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.put_pass .pass_bg{
+    margin-top: -30px;
+    position: relative;
+}
+.put_pass .pass_bg .step3_bg{
+    width: 100%;
+}
+.put_pass span{
+    display: block;
+    position: absolute;
+    top: 13.5%;
+    left: 25%;
+    width: 48%;
+    z-index: 100;
+    font-weight: bold;
+}
+.put_pass span img{
+    width: 15%;
+    margin-right: 2%;
+    opacity: 0;
+    float: left;
+}
+.put_pass span>img:nth-child(1){
+    -webkit-animation: showmi 340ms 0 forwards;
+    -o-animation: showmi 340ms 0 forwards;
+    animation: showmi 340ms 0 forwards;
+}
+.put_pass span>img:nth-child(2){
+    -webkit-animation: showmi 340ms 340ms forwards;
+    -o-animation: showmi 340ms 340ms forwards;
+    animation: showmi 340ms 340ms forwards;
+}
+.put_pass span>img:nth-child(3){
+    -webkit-animation: showmi 340ms 680ms forwards;
+    -o-animation: showmi 340ms 680ms forwards;
+    animation: showmi 340ms 680ms forwards;
+}
+.put_pass span>img:nth-child(4){
+    -webkit-animation: showmi 340ms 1020ms forwards;
+    -o-animation: showmi 340ms 1020ms forwards;
+    animation: showmi 340ms 1020ms forwards;
+}
+.put_pass span>img:nth-child(5){
+    -webkit-animation: showmi 340ms 1360ms forwards;
+    -o-animation: showmi 340ms 1360ms forwards;
+    animation: showmi 340ms 1360ms forwards;
+}
+.put_pass span>img:nth-child(6){
+    margin-right: 0;
+    -webkit-animation: showmi 340ms 1700ms forwards;
+    -o-animation: showmi 340ms 1700ms forwards;
+    animation: showmi 340ms 1700ms forwards;
+}
+.put_pass .queren{
+    position: absolute;
+    width: 43.18618%;
+    left: 28.502879%;
+    bottom:20.0974421%;
+}
+.put_pass .queren img{
+    width: 100%;
+}
+.put_pass .tips{
+    position: absolute;
+    bottom: 21.74177831%;
+    right: 33.0134357%;
+    display: none;
+    z-index: 100;
+    width: 8.349328%;
+    height: 5.2984165%;
+}
+.tips > img:nth-child(1){
+    position: absolute;
+    width: 100%;
+    z-index: 101;
+    opacity: 0;
+    -webkit-animation: showpoint1 2040ms infinite;
+    -o-animation: showpoint1 2040ms infinite;
+    animation: showpoint1 2040ms infinite;
+}
+.tips > img:nth-child(2){
+    position: absolute;
+    width: 63.21839%;
+    z-index: 102;
+    top: 18.390805%;
+    left:18.390805%;
+    opacity: 0;
+    -webkit-animation: showpoint2 1.5s infinite;
+    -o-animation: showpoint2 1.5s infinite;
+    animation: showpoint2 1.5s infinite;
+}
+.put_pass .shou{
+    z-index: 1000;
+    width: 22.168905%;
+    position: absolute;
+    bottom: 11.693057%;
+    right: 16.218809%;
+    display: none;
+    -webkit-animation: fadeInRight 1.5s infinite;
+    -o-animation: fadeInRight 1.5s infinite;
+    animation: fadeInRight 1.5s infinite;
+}
+.put_pass .step3_tit{
+    position: absolute;
+    width: 64.395393%;
+    left: 12.5719%;
+    bottom: 2.984165%;
+}
+
+
+
+/*尾页*/
+.weiye{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg");
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+.weiye .top img{
+    width: 100%;
+}
+.weiye .body{
+    width: 100%;
+}
+.weiye .body img{
+    width: 100%;
+}
+
+/*动画*/
+@-webkit-keyframes showmi {
+    0% {
+        opacity: 0.0; }
+
+
+    100% {
+        opacity: 1; }
+}
+@keyframes  showmi{
+    0% {
+        opacity: 0.0; }
+
+
+    100% {
+        opacity: 1; }
+}
+
+@-webkit-keyframes showpoint1 {
+    0% {
+        opacity: 0.0; }
+
+
+    100% {
+        opacity: 1; }
+}
+@keyframes  showpoint1{
+    0% {
+        opacity: 0.0; }
+
+
+    100% {
+        opacity: 1; }
+}
+@-webkit-keyframes showpoint2 {
+    0% {
+        opacity: 0.0; }
+
+    40%{
+        opacity: 0.0; }
+
+    100% {
+        opacity: 1; }
+}
+@keyframes  showpoint2{
+    0% {
+        opacity: 0.0; }
+
+    40%{
+        opacity: 0.0; }
+
+    100% {
+        opacity: 1; }
+}
+@-webkit-keyframes showpoint3 {
+    0% {
+        opacity: 0.0; }
+
+    60%{
+        opacity: 0.0; }
+
+    100% {
+        opacity: 1; }
+}
+@keyframes  showpoint3{
+    0% {
+        opacity: 0.0; }
+
+    60%{
+        opacity: 0.0; }
+
+    100% {
+        opacity: 1; }
+}
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}

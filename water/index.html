@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>我为青春补补水</title>
+	
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="wrap">
+		<!-- loading动画-->
+		<div id="loading">
+			<div>
+				<p></p>
+				<span>0%</span>
+			</div>
+		</div>
+
+		<!--首页START-->
+		<div class="index" id="index" style="display: none">
+
+			<!-- 声音-->
+			<!-- <div id="music">
+				<img src="images/mute_01.png" date="images/mute_02.png" />
+				<audio src="music/bg_music.mp3" autoplay="autoplay" loop="loop"></audio>
+
+			</div> -->
+			<!--声音结束-->
+
+			<!--首页logo-->
+			<div class="in_logo"><img src="images/index/index_logo.png" /></div>
+			<!--中间部分-->
+			<div class="in_mid">
+				<!--对话框背景-->
+				<img src="images/index/in_bg01.png" class="theopa in_mid_main" />
+				<!--对话出现-->
+				<img src="images/index/duihua.png" class="theopa in_con" />
+				<!--水密码形象-->
+				<img src="images/index/in_01.png" class="theopa water" />
+				<!--人物-->
+				<img src="images/index/people_01.png" class="thepeo in_people_01" />
+				<img src="images/index/people_02.png" class="thepeo in_people_02" />
+				<img src="images/index/people_03.png" class="thepeo in_people_03" />
+				<img src="images/index/people_04.png" class="thepeo in_people_04" />
+				<img src="images/index/people_05.png" class="thepeo in_people_05" />
+			</div>
+			<!--首页底部-->
+			<div class="in_bot">
+				<a class="start" href="select.html">
+					<img src="images/index/start.png" />
+				</a>
+				<a class="rule" id="rule">
+					<img src="images/index/shouze.png" />
+				</a>
+			</div>
+		</div>
+		<!--首页END-->
+		<!-- 补水START-->
+		<div class="award_bg" id="award">
+			<div class="award2">
+				<!-- <div class="award_t">
+					<p>补水守则</p>
+					<img id="award_close" src="images/index/a_back.png" alt="" class="award_t_back" />
+				</div>
+				<div class="award_main">
+					<p class="activity_p">
+						活动时间：2015年12月7日至12月20日<br /><br />
+						<img src="images/index/s1.jpg" alt="">挑选你喜欢的学员，轻拍脸部为其补水。<br />
+						<img src="images/index/s2.jpg" alt="">在20秒内为学员拍的细肤水越多，其水润星值越高，星途越广阔。<br />
+						<img src="images/index/s3.jpg" alt="">为学员拍细肤水的次数将转化为票数，程序会将票数记录在后台，本H5结束后票数会更新在水密码官网<a href="http://wetcode.hooyeah.cn" alt=""><img src="images/index/xueyuan.jpg" alt=""></a>投票板块中。<br />
+						<img src="images/index/s4.jpg" alt="">为学员补水后留下手机号码，即可参与抽奖。<br />
+						*水密码在法律范围内对本次活动保留解释权
+					</p>
+
+				</div>
+				<div class="award_bb">
+					<img src="images/index/a_02.png" alt="" />
+				</div> -->
+				<div>
+					<span id="award_close"></span>
+					<a href="http://wetcode.hooyeah.cn"></a>
+					<img src="images/index/shouze2.png" alt="">
+				</div>
+				
+			</div>
+		</div>
+		<!-- 补水END-->
+	</div>
+</body>
+<!-- <script src="js/public.js" charset="gb2312"></script> -->
+
+<script>
+	var limg = ["load_font.png","loading.jpg"];
+	var imgs = ["index/shouze2.png","index/duihua.png","index/in_01.png","index/in_bg01.png","index/index_logo.png","index/people_01.png","index/people_02.png","index/people_03.png","index/people_04.png","index/people_05.png","index/shouze.png","index/start.png"];
+	var ind = 0;
+	for (var i = 0; i < limg.length; i++) {
+		var img = new Image();
+		img.src = "images/"+limg[i];
+		img.onload = function  () {
+			ind++;
+			if (ind==limg.length) {
+				loading(imgs,function(){
+					$("#loading").delay(1200).fadeOut();
+					$("#index").delay(1400).fadeIn();
+				})
+			};
+		}
+	};
+	function loading (aimg,fn) {
+        var index = 0;
+        for (var i = 0; i < aimg.length; i++) {
+            var img = new Image();
+            img.src = "images/"+aimg[i];
+			img.onload = function  () {
+                index++;
+                var p = parseInt((index / aimg.length*100));
+                $("#loading p").css("backgroundPosition","0 -"+parseInt(195*(p/100))+"px");
+                $("#loading span").html(p+"%");
+
+                if (index==aimg.length) {
+                    fn && fn();
+                };
+            }
+        };
+    }
+
+	$rule_btn = $("#rule");
+	$rule_btn.on("touchstart", function(){
+		$("#index").hide();
+		$("#award").show();
+	})
+	$("#award_close").on("touchstart", function(){
+		$("#award").hide();
+		$("#index").show();
+		$("#index").find("img").css({"animation":"none"});
+		$("#index").find(".theopa").css({opacity:1});
+		$("#index").find(".thepeo").css({bottom:0});
+		$("#index").find(".in_con").css({"-webkit-transform": "scale3d(1, 1, 1)",
+		transform: "scale3d(1, 1, 1)"})
+	});
+
+</script>
+</html>

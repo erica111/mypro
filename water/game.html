@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>我为青春补补水</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+
+    <div class="wrap">
+        <!-- loading动画-->
+        <div id="loading" style="display: block">
+            <div>
+                <p></p>
+                <span>0%</span>
+            </div>
+        </div>
+
+        <!-- 声音-->
+        <div id="music">
+            <img src="images/mute_01.png" date="images/mute_02.png" />
+            <audio src="music/bg_music.mp3" autoplay="autoplay" loop="loop"></audio>
+        </div>
+        <!--声音结束-->
+
+
+        <!-- 补水游戏START-->
+        <div class="game" id="game" style="display: none">
+            <div class="logo">
+                <img src="images/game/bs_logo1.png" alt=""/>
+            </div>
+            <div class="peo" id="peo">
+                <div id="chat">
+                    <img class="chat0" src="" alt=""/>
+                </div>
+                <div class="biao1">
+                    <img class="img1" src="images/game/biao01.png" alt=""/>
+                </div>
+                <div class="biao2">
+                    <img class="img1" src="images/game/biao02.png" alt=""/>
+                </div>
+                <img class="head" id="head" src="images/game/peo0_head.png" alt=""/>
+                <img class="body" src="images/game/peo0_body.png" alt=""/>
+                <img src="images/game/hand.png" alt="" class="hand" id="hand"/>
+            </div>
+            <div class="foot clear" id="foot">
+                <div class="time">
+                    <p><span id="time">20</span><em>"</em><span id="second">00</span></p>
+                </div>
+                <img class="cp_logo" src="images/game/product.png" alt=""/>
+            </div>
+        </div>
+        <!-- 补水游戏END-->
+
+        <!-- 游戏结果START-->
+        <div class="result" id="result" style="display: none">
+            <div class="result_t">
+                <img src="images/game/result.png" />
+                <p><em id="theName"></em>的水润星值为</p>
+            </div>
+            <div class="r_score clear" id="r_score">
+
+            </div>
+            <div class="result_m" id="result_m">
+                <div class="result_con" style="display: none">
+                    <img src="images/game/rt_11.png" class="img1" />
+                    <img src="images/game/rt_12.png" />
+                </div>
+                <div class="result_con" style="display:none">
+                    <img src="images/game/rt_21.png" class="img1" />
+                    <img src="images/game/rt_22.png" />
+                </div>
+                <div class="result_con" style="display:none">
+                    <img src="images/game/rt_31.png" class="img1" />
+                    <img src="images/game/rt_32.png" />
+                </div>
+            </div>
+            <div class="result_b" id="result_b">
+                <img src="images/game/r_1.png" class="img1"/>
+                <img src="images/game/r_2.png" class="img2" />
+                <img src="images/game/r_3.png" class="img3" />
+            </div>
+            <div class="r_bot" id="bot">
+                <img src="images/game/choujiang.png" alt="" />
+            </div>
+        </div>
+        <!--游戏结果END-->
+
+        <!--抽奖页面START-->
+        <div id="lottery" style="display: none">
+            <div class="lottery_t">
+                <img src="images/game/text_01.png" class="img" />
+                <!-- <img src="images/game/laba.png" class="lottery_t_l" /> -->
+            </div>
+            <div class="lottery_pro">
+                <ul>
+                    <li class="le"><img src="images/game/pro_01.png" /></li>
+                    <li class="ce"><img src="images/game/pro_02.png" /></li>
+                    <li class="ri last"><img src="images/game/pro_03.png" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            
+            <div class="photo">
+                <img src="images/game/photo.png" />
+                <input placeholder="" type="tel" id="phone" />
+            </div>
+            <input type="button" class="button" id="submitBtn" />
+            <a id="awardRule" class="xize">
+                <img src="images/game/xize.png" alt="">
+            </a>
+            <div class="yujing"><img src="images/game/yujing.png"></div>
+        </div>
+        <!--抽奖页面END-->
+
+        <!-- 发奖详细START-->
+        <div class="award_bg" id="award_bg" style="display: none">
+            <div class="award">
+                <div class="award_t">
+                    <p>发奖细则</p>
+                    <img id="award_close" src="images/game/a_back.png" alt="" class="award_t_back" />
+                </div>
+                <div class="award_main">
+                    <p class="award_main_p">
+                        1.	即日起至12月20日，参与并分享本活动将有机会获得水密码青春补水4件套、水漾焕能超值礼盒、锁水修护礼盒、学员定制抱枕、台历和毛巾等礼品，更有《一年级》水润学堂终极神秘毕业礼大奖。<br /><br />
+                        2.	本活动由系统每天随机抽取幸运用户和奖品。奖品统一在12月22日后安排发放。<br /><br />
+                        3.	工作人员将提前联系获奖用户，并安排邮寄，故在此期间请您保持手机通畅。<br /><br />
+                        *水密码在法律范围内对活动保留解释权
+                    </p>
+                </div>
+                <div class="award_b">
+                    <img src="images/game/a_01.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <!--发奖详细END-->
+
+        <!--分享页面START-->
+        <div class="share" id="share" style="display: none">
+            <div class="share_main">
+                <img src="images/game/abc.png" alt="" class="abc"/>
+                <img src="images/game/to_share.png" alt="" class="to_share" />
+                <img src="images/game/share_text2.png" alt="" class="share_text2" />
+                <img src="images/game/pen.png" alt="" class="pen" />
+                <img src="images/game/share_text.png" alt="" class="share_text1" />
+                <img src="images/game/sh_people.png" alt="" class="share_main_p" />
+            </div>
+        </div>
+    </div>
+        <!--分享页面END-->
+    </div>
+</body>
+<script>
+    var limg = ["load_font.png","loading.jpg","bg.jpg"];
+    /*"game/peo4_body.png","game/peo5_body.png","game/peo6_body.png","game/peo7_body.png","game/peo8_body.png","game/peo9_body.png","game/peo10_body.png","game/peo11_body.png","game/peo12_body.png","game/peo13_body.png","game/peo1_body.png","game/peo2_body.png","game/peo3_body.png","game/peo4_head.png","game/peo5_head.png","game/peo6_head.png","game/peo7_head.png","game/peo8_head.png","game/peo9_head.png","game/peo10_head.png","game/peo11_head.png","game/peo12_head.png","game/peo13_head.png","game/peo1_head.png","game/peo2_head.png",
+        "game/peo3_head.png",*/
+    var url= window.location.search.split("=")[1];
+    var imgs = ["game/a_01.png","game/a_back.png","game/a_couple.png","game/abc.png","game/biao01.png","game/biao02.png","game/biao51.png","game/biao52.png","game/biao101.png","game/biao102.png","game/biao103.png","game/biao151.png","game/biao152.png","game/bs_logo1.png","game/bs_logo2.png","game/bs_text.png","game/car.png","game/chat1.png","game/chat2.png","game/chat3.png","game/choujiang.png","game/er.jpg","game/er_bg.png","game/fuhao.png","game/guide.png","game/hand.png","game/laba.png","game/music.png","game/pen.png","game/xize.png","game/yujing.png","game/product.gif"]
+    imgs.push("game/peo"+url+"_body.png");
+    imgs.push("game/peo"+url+"_head.png");
+    loading(imgs,function(){
+        $("#loading").delay(1200).fadeOut();
+        $("#game").delay(1400).fadeIn();
+    })
+    
+    function loading (aimg,fn) {
+        var index = 0;
+        for (var i = 0; i < aimg.length; i++) {
+            var img = new Image();
+            img.src = "images/"+aimg[i];
+            img.onload = function  () {
+                index++;
+                var p = parseInt((index / aimg.length*100));
+                $("#loading p").css("backgroundPosition","0 -"+parseInt(195*(p/100))+"px");
+                $("#loading span").html(p+"%");
+
+                if (index==aimg.length) {
+                    fn && fn();
+                };
+            }
+        };
+    }
+</script>
+<script src="js/public.js" charset="gb2312"></script>
+<script src="js/game.js" charset="gb2312"></script>
+</html>

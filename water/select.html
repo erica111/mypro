@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+    <title>我为青春补补水</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- loading动画-->
+		<div id="loading" style="display: block">
+			<div>
+				<p></p>
+				<span>0%</span>
+			</div>
+		</div>
+
+		<!-- 声音-->
+		<!-- <div id="music">
+			<img src="images/mute_01.png" date="images/mute_02.png" />
+			<audio src="music/bg_music.mp3" autoplay="autoplay" loop="loop"></audio>
+
+		</div> -->
+		<!--声音结束-->
+
+		<!--挑选学员页面START-->
+		<div class="select" id="choice" style="display: none">
+			<!--挑选学员页logo-->
+			<div class="s_logo">
+				<img src="images/choice/index_logo.png" />
+			</div>
+			<!--挑选学员-->
+			<div class="s_main swiper-container">
+				<!--点击切换-->
+				<div class="s_tab">
+					<img src="images/choice/s_tab_l.PNG" class="s_tab_img fl swiper-button-prev" style="background: none;" id="lArrow" />
+					<img src="images/choice/s_tab_r.PNG" class="s_tab_img fr swiper-button-next" style="background: none;" id="rArrow" />
+				</div>
+
+				<ul id="select" class=" swiper-wrapper">
+					<li class="swiper-slide">
+						<img src="images/choice/s_body01.PNG" class="s_body" />
+						<img src="images/choice/s_e01.PNG" class="s_e" />
+						<img src="images/choice/s_text01.PNG" class="s_text" />
+						<img src="images/choice/s_water01.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body02.PNG" class="s_body" />
+						<img src="images/choice/s_e02.PNG" class="s_e" />
+						<img src="images/choice/s_text02.PNG" class="s_text" />
+						<img src="images/choice/s_water02.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body03.PNG" class="s_body" />
+						<img src="images/choice/s_e03.PNG" class="s_e" />
+						<img src="images/choice/s_text03.PNG" class="s_text" />
+						<img src="images/choice/s_water03.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body04.PNG" class="s_body" />
+						<img src="images/choice/s_e04.PNG" class="s_e" />
+						<img src="images/choice/s_text04.PNG" class="s_text" />
+						<img src="images/choice/s_water04.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body05.PNG" class="s_body" />
+						<img src="images/choice/s_e05.PNG" class="s_e" />
+						<img src="images/choice/s_text05.PNG" class="s_text" />
+						<img src="images/choice/s_water05.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body06.PNG" class="s_body" />
+						<img src="images/choice/s_e06.PNG" class="s_e" />
+						<img src="images/choice/s_text06.PNG" class="s_text" />
+						<img src="images/choice/s_water06.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body07.PNG" class="s_body" />
+						<img src="images/choice/s_e07.PNG" class="s_e" />
+						<img src="images/choice/s_text07.PNG" class="s_text" />
+						<img src="images/choice/s_water07.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body08.PNG" class="s_body" />
+						<img src="images/choice/s_e08.PNG" class="s_e" />
+						<img src="images/choice/s_text08.PNG" class="s_text" />
+						<img src="images/choice/s_water08.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body09.PNG" class="s_body" />
+						<img src="images/choice/s_e09.PNG" class="s_e" />
+						<img src="images/choice/s_text09.PNG" class="s_text" />
+						<img src="images/choice/s_water09.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body10.PNG" class="s_body" />
+						<img src="images/choice/s_e10.PNG" class="s_e" />
+						<img src="images/choice/s_text10.PNG" class="s_text" />
+						<img src="images/choice/s_water10.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body11.PNG" class="s_body" />
+						<img src="images/choice/s_e11.PNG" class="s_e" />
+						<img src="images/choice/s_text11.PNG" class="s_text" />
+						<img src="images/choice/s_water11.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body12.png" class="s_body" />
+						<img src="images/choice/s_e12.PNG" class="s_e" />
+						<img src="images/choice/s_text12.PNG" class="s_text" />
+						<img src="images/choice/s_water12.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body13.PNG" class="s_body" />
+						<img src="images/choice/s_e13.PNG" class="s_e" />
+						<img src="images/choice/s_text13.PNG" class="s_text" />
+						<img src="images/choice/s_water13.PNG" class="s_water" />
+					</li>
+					<li class="swiper-slide">
+						<img src="images/choice/s_body14.PNG" class="s_body" />
+						<img src="images/choice/s_e14.PNG" class="s_e" />
+						<img src="images/choice/s_text14.PNG" class="s_text" />
+						<img src="images/choice/s_water14.PNG" class="s_water" />
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<!--点击挑选学员-->
+			<div class="s_b">
+				<a id="goGame"><img src="images/choice/s_tab.PNG" alt=""></a>
+			</div>
+		</div>
+		<!--挑选学员页面END-->
+
+
+	</div>
+</body>
+<!-- <script src="js/public.js" charset="gb2312"></script> -->
+<script src="js/swiper.min.js"></script>
+<script>
+	var imgs = ["choice/s_text01.PNG","choice/s_text02.PNG","choice/s_text03.PNG","choice/s_text04.PNG","choice/s_water01.PNG","choice/s_water02.PNG","choice/s_water03.PNG","choice/s_water04.PNG","choice/s_e01.PNG","choice/s_e02.PNG","choice/s_e03.PNG","choice/s_e04.PNG","choice/s_body01.PNG","choice/s_body02.PNG","choice/s_body03.PNG","choice/s_body04.PNG","choice/s_tab.PNG","choice/s_tab_l.PNG","choice/s_tab_r.PNG","choice/bg.jpg","choice/index_logo.png"]
+	var mySwiper;
+	loading(imgs,function(){
+		$("#loading").delay(1200).fadeOut(function(){
+				mySwiper = new Swiper('.swiper-container',{
+				pagination : '.swiper-pagination',
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+				paginationClickable: true,
+				longSwipesRatio: 0.3,
+				touchRatio:1,
+				loop:true,
+				observer:true,//修改swiper自己或子元素时，自动初始化swiper
+				observeParents:true,//修改swiper的父元素时，自动初始化swiper
+				onSlideChangeEnd: function(swiper) {
+					//Swiper初始化了
+					//alert(swiper.activeIndex);提示Swiper的当前索引
+					$select.find(".s_water").hide();
+					$select.find(".s_e").hide();
+					$select.find(".s_text").css("opacity",0);
+					$select.find(".s_e").eq(swiper.activeIndex).delay(200).fadeIn();
+					$select.find(".s_text").eq(swiper.activeIndex).delay(500).fadeIn(function(){
+						$(this).css("opacity",1);
+					});
+					$select.find(".s_water").eq(swiper.activeIndex).delay(800).fadeIn();
+				}
+			})
+		});
+		$("#choice").delay(1400).fadeIn();
+	});
+
+
+	function loading (aimg,fn) {
+		var index = 0;
+		for (var i = 0; i < aimg.length; i++) {
+			var img = new Image();
+			img.src = "images/"+aimg[i];
+			img.onload = function  () {
+				index++;
+				var p = parseInt((index / aimg.length*100));
+				$("#loading p").css("backgroundPosition","0 -"+parseInt(195*(p/100))+"px");
+				$("#loading span").html(p+"%");
+
+				if (index==aimg.length) {
+					fn && fn();
+				};
+			}
+		};
+	}
+
+	var $index = 0;
+	var $Lbtn=$("#lArrow");
+	var $Rbtn=$("#rArrow");
+	var $select = $("#select");
+	var $bol =true;
+	$select.find(".s_e").eq(0).delay(2100).fadeIn();
+	$select.find(".s_text").eq(0).delay(2400).fadeIn(function(){
+		$(this).css("opacity",1);
+	});
+	$select.find(".s_water").eq(0).delay(2700).fadeIn();
+
+	function toLeft(){
+		mySwiper.slidePrev();
+	}
+	function toRight(){		
+		mySwiper.slideNext();
+	}
+
+
+	$Lbtn.on("touchstart", toLeft);
+	$Rbtn.on("touchstart", toRight);
+
+	
+
+
+	$("#goGame").on("touchstart", function(){
+		$index = mySwiper.activeIndex-1;
+		if($index<0){
+			$index=13;
+		}
+		if($index>13){
+			$index=0;
+		}
+		window.location.href = "game.html?index="+$index;
+	});
+
+
+</script>
+</html>

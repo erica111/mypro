@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Adidas NEO</title>
+<link type="text/css" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"></meta>
+<!--<script type="text/javascript">
+ //缩放比例
+if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+  var version = parseFloat(RegExp.$1);
+  if(version>2.3){
+   var phoneScale = parseInt(window.screen.width)/640;
+   document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+  }else{
+   document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+  }
+ }else{
+  document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+ }
+//微信去掉下方刷新栏
+ if(RegExp("MicroMessenger").test(navigator.userAgent)){
+  document.addEventListener('WeixinJSBridgeReady', function() {
+      WeixinJSBridge.call('hideToolbar');
+  });
+ }
+</script>-->
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />	
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+<style type="text/css">
+html,body{width: 100%;height: 100%;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+.swiper-container{width: 100%;height: 100%;background: url(images/bglock.jpg) no-repeat;background-size: 100% 100%;}
+.lucy{position:relative;}
+.weicoblock img{width: 95%;display:block;margin: 15px auto;}
+.timeblock{color: white;text-align: center;padding: 35px 0;}
+.timeblock img{width:255px;}
+.timeblock p{font-size: 15px;padding-top: 15px;font-family: "微软雅黑";letter-spacing: 2px;color: #cecece;}
+
+.radiu{position: absolute;bottom: 2%;left: 50%;width: 35px;margin-left: -17px;}
+.camera{position: absolute;bottom: 1%;right: 2%;width: 35px;}
+.invitation{width: 100%;height: 100%;}
+#clip img{width: 48px;}
+#hands img {width: 36px;}
+#hands,#clip{padding: 5px 16px 5px 13px;}
+.lock{
+  position:absolute;bottom:9%;
+  left: 50%;
+  margin-left: -83.5px;
+  height: 57px;
+  width: 167px;
+  background: -webkit-linear-gradient(20deg,#6cd2d0,#dcea57);
+  color: rgba(0,0,0,0);
+  -webkit-animation:move 1.5s linear infinite;
+  -webkit-mask-image:url(images/slide.png);
+  -webkit-mask-repeat:no-repeat;
+}
+@-webkit-keyframes move{
+  0%{
+    background-position:0 0;
+  }
+  100%{
+    background-position:167px 0;
+  }
+}
+#loading{
+  font-size: 35px;
+  color: #38ba98;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+#loading div{
+  position: absolute;
+  width: 79px;
+  line-height: 79px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -60px;
+}
+#loading img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation:loading 1s linear infinite;
+}
+@-webkit-keyframes loading{
+  0%{
+    -webkit-transform:rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+       <div class="swiper-slide"></div>
+        <div class="swiper-slide lucy">
+          	<div class="timeblock">
+          	<img src="images/time.png">
+        		<p class="date">12月8日    星期二</p>
+          	</div>
+        	<div class="weicoblock">
+        		<img src="images/weico.png" />
+        	</div>
+        	<div class="lock">
+        		<!-- <img src="images/slide.png" /> -->
+        	</div>
+        	<img src="images/radiu.png"  class="radiu"/><img src="images/camera.png" class="camera" />
+        </div>
+       
+   
+    </div>
+</div>
+
+<div id="loading">
+    <div>
+      <img src="images/loading.png" alt="">
+      <span>0</span>
+    </div>
+ </div>
+
+
+<div class="wrap" style="display:none" id="wrap">
+  <!--时间-->
+  <p class="time">下午3:06</p>
+  <!--信息Hey,dear！-->
+  <div class="mes" style="display:block">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p>Hey，dear！</p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--视频-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <img src="images/weixinshipin.png" class="video" id="video" />
+    <div class="clear"></div>
+  </div>
+  <!--发布会信息-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p><img src="images/logo.jpg">
+        2016春夏新品发布会，就要开始咯！</p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--期待图片-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div id="clip" class="ri">
+      <p><img  src="images/clip.jpg"></p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--询问-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p>想来参加吗？</p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--对话1-->
+  <div class="mes" id="mes">
+    <img src="images/yonghu.jpg" class="ri_r" />
+    <div class="ri_l">
+      <p>好呀好呀</p>
+      <div class="jt"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--对话2-->
+  <div class="mes" id="notime">
+    <img src="images/yonghu.jpg" class="ri_r" />
+    <div class="ri_l">
+      <p>没时间诶</p>
+      <div class="jt"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--选择没时间出现的内容-->
+  <div class="mes" id="select">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p>好吧，那我还是把邀请函发给您，尽量抽空来哦</p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--开心-->
+  <div id="hands" class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p><img  src="images/hands.jpg"></p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--邀请函-->
+  <div class="mes" id="yaoqing">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="map">
+      <img src="images/yaoqing.png" />
+      <div class="shou" id="s1"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--确定时间地址-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="ri">
+      <p>
+        再跟你确定下，时间是2015年12月8日14:30，地址是 竹语间-北京市朝阳区百子湾路石门村路5号院,不见不散！
+      </p>
+      <div class="jiantou"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--地图-->
+  <div class="mes">
+    <img src="images/anglebaby.png" class="le" />
+    <div class="map">
+      <img src="images/map.png" class="video" />
+      <div class="shou" id="s2"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--底部-->
+<!--视频弹窗-->
+<div id="video_wrap">
+  <!-- <div class="vi"><img src="images/video.jpg" /></div> -->
+  <video class="vi" src="1-150611164940.mp4" poster="images/video.jpg">您的浏览器不支持video标签</video>
+  <div id="back"></div>
+</div>
+<div class="bot">
+  <img src="images/bottom.jpg" id="bot" />
+  <div id="key">
+    <img src="images/shuru.jpg" />
+    <div class="select" >
+      <span class="fl" id="want">我想来啊</span>
+      <span class="fr" id="noth">没时间诶</span>
+    </div>
+  </div>
+  
+</div>
+<!--点击邀请函弹窗-->
+<div class="yaoqing" id="invite">
+  <img src="images/ditu.jpg">
+  <div id="back_in">
+    <img src="images/back_01.png" />
+  </div>
+  <p id="save">长按保存图片</p>
+</div>
+<audio id="audio" src="sound/sound.mp3"></audio>
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/index.js"></script>
+</html>

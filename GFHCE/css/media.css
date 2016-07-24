@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 414px){
+    .weiye .body{
+        width: 110%;
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 375px){
+    .weiye .body{
+        width: 105%;
+        margin-left: -2.5%;
+    }
+
+}
+
+@media screen and (max-device-height: 570px) and (max-width:320px){
+    .weiye .body{
+        width: 110%;
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width:320px) and (max-device-height:480px){
+    .weiye .body{
+        width: 85%;
+        margin: 0 auto;
+    }
+}

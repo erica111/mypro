@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:560px){
+	.award_main_p{
+		font-size: 26px;
+	}
+	.award_t p{
+		font-size: 54px;
+	}
+	.award_t_back{
+		top: 23%;
+		right: 10%;
+	}
+	.activity_p{
+		font-size: 30px;
+	}
+	.activity_p img{
+		width: 30px;
+		vertical-align: middle;
+	}
+	.activity_p a img{
+		width: 100px;
+	}
+	.result_t p{
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width:540px){
+	.yujing{
+		width: 75%;
+	}
+	.photo{
+		width: 75%;
+	}
+	.button{
+		width:32.744%;
+	}
+	.xize{
+		width: 22.372%;
+	}
+}
+@media screen and (max-width:475px){
+	.photo input{
+		font-size: 30px;
+	}
+	.button{
+		height: 46px;
+	}
+	.award_main_p{
+		font-size: 22px;
+	}
+	
+	.award_t p{
+		font-size: 48px;
+	}
+	.award_t_back{
+		top: 23%;
+		right: 10%;
+	}
+	.activity_p{
+		font-size: 26px;
+	}
+	.activity_p img{
+		width: 26px;
+		vertical-align: middle;
+	}
+	.activity_p a img{
+		width: 100px;
+	}
+	.result_t p{
+		font-size: 32px;
+		top: 28%;
+	}
+}
+@media screen and (max-width:420px){
+	.photo input{
+		font-size: 26px;
+	}
+	.award_main_p{
+		font-size: 20px;
+	}
+	.award_t p{
+		font-size: 45px;
+	}
+	.activity_p{
+		font-size: 23px;
+	}
+	.activity_p img{
+		width: 23px;
+		vertical-align: middle;
+	}
+	.activity_p a img{
+		width: 100px;
+	}
+	.result_t p{
+		font-size: 28px;
+		top: 28%;
+	}
+}
+@media screen and (max-width:375px){
+	.photo input{
+		font-size: 24px;
+	}
+	.award_main_p{
+		font-size: 17px;
+	}
+	.award_t p{
+		font-size: 38px;
+	}
+	.activity_p{
+		font-size: 20px;
+	}
+	.activity_p img{
+		width: 20px;
+		vertical-align: middle;
+	}
+	.activity_p a img{
+		width: 100px;
+	}
+	.result{
+		width: 100%; padding:6.26% 0 7% 0; 
+	}
+	.in_bot .start{
+		width:120px; margin-bottom: 1.8%;
+	}
+}
+@media screen and (max-width:360px){
+	.photo input{
+		font-size: 22px;
+	}
+	.award_main_p{
+		font-size: 17px;
+	}
+	.award_t p{
+		font-size: 38px;
+	}
+	.result_t p{
+		font-size: 25px;
+		top: 28%;
+	}
+}
+@media screen and (max-width:320px){
+	.select{
+		padding: 3.4375% 0 1.53125% 0;
+	}
+	.index{
+		padding: 4.6875% 0 0.477119% 0;
+	}
+	.photo input{
+		font-size: 20px;
+	}
+	.award_main_p{
+		font-size: 15px;
+	}
+	.award_t p{
+		font-size: 30px;
+	}
+	.activity_p{
+		font-size: 17px;
+	}
+	.activity_p img{
+		width: 17px;
+		vertical-align: middle;
+	}
+	.activity_p a img{
+		width: 100px;
+	}
+	.result_t p{
+		font-size: 21px;
+		top: 29%;
+	}
+	.in_mid {
+		width: 85%;
+		padding-bottom: 43%; margin: 0 auto 2%;
+	}
+	.in_bot .start{
+		width: 110px;
+	}
+	.in_bot .rule{
+		width:85px;
+	}
+	.s_main{width: 80%;}
+	.result{
+		width: 89%;
+		margin: 0 auto;
+	}
+	#lottery{
+		width: 89%;
+		margin: 0 auto;
+	}
+	.lottery_pro{
+		margin: 0 auto 2.7%;
+	}
+	.yujing{
+		margin: 0 auto 3.15%;
+	}
+	.photo{
+		margin: 0 auto 1.65%;
+	}
+	.button{
+		margin: 0 auto 0.15%;
+	}
+}
+
